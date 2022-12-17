@@ -1,0 +1,68 @@
+.pane-style{
+    -fx-background-color: #FFFFFF;
+    -fx-background-radius: 25.6;
+    -fx-border-radius: 25.6;
+    -fx-effect: dropshadow(three-pass-box, rgba(0,0,0,0.1), 15, 0, 0,3.2);
+}
+
+.scroll-pane {
+    -fx-background: #FFFFFF;
+    -fx-border-color: #FFFFFF;
+    -fx-border-width: 0px;
+}
+
+.search-field{
+    -fx-border-color: #F0F0F0;
+    -fx-border-radius: 19.2;
+
+    -fx-background-color: #F0F0F0;
+    -fx-background-radius: 19.2;
+
+    -fx-text-fill: #A89494;
+    -fx-font-weight: 600;
+    -fx-font-size: 16px;
+}
+
+
+.filter-field{
+    -fx-border-color: #F0F0F0;
+    -fx-border-radius: 12.8;
+
+    -fx-background-color: #F0F0F0;
+    -fx-background-radius: 12.8;
+
+    -fx-text-fill: #A89494;
+    -fx-font-weight: 600;
+    -fx-font-size: 12px;
+}
+.header-style{
+    -fx-text-fill: #36573E;
+    -fx-font-size: 23px;
+}
+
+.table-header-style{
+    -fx-text-fill: #36573E;
+    -fx-font-size: 14px;
+}
+
+.table-row-style{
+    -fx-text-fill: #A89494;
+    -fx-font-size: 12px;
+}
+
+.check-box .box {
+    -fx-background-color: #F0F0F0;
+    -fx-border-color: #D2D2D2;
+    -fx-border-radius:2px;
+}
+
+.check-box:selected .mark {
+    -fx-background-color: white;
+
+}
+
+.check-box:selected .box {
+    -fx-border-color: #38D260;
+    -fx-background-color: #38D260;
+}
+

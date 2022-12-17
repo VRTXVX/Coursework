@@ -1,0 +1,72 @@
+.body-bg-login{
+    -fx-background-image:url('../image/backgrounds/LogInBG.png');
+    -fx-background-size: 100% 100%;
+    -fx-background-repeat: no-repeat;
+}
+
+
+.body-bg-create{
+    -fx-background-image:url('../image/backgrounds/CreateAccountBG.png');
+    -fx-background-size: 100% 100%;
+    -fx-background-repeat: no-repeat;
+}
+
+
+.form-field{
+    -fx-border-color: #D2D2D2;
+    -fx-border-radius: 12.8;
+
+    -fx-background-color: #F0F0F0;
+    -fx-background-radius: 12.8;
+
+    -fx-text-fill: #A89494;
+    -fx-font-weight: 600;
+    -fx-font-size: 16px;
+}
+
+
+.btn-primary{
+    -fx-background-color: #38D260;
+    -fx-background-radius: 12.8;
+
+    -fx-border-radius: 12.8;
+
+    -fx-text-fill: white;
+    fx-font-weight: 600;
+    -fx-font-size: 16px;
+}
+
+.btn-primary:hover{
+    -fx-background-color: #2E9E4C;
+}
+
+.btn-primary:pressed{
+    -fx-background-color: #2E9E4C;
+}
+
+
+.text-link{
+    -fx-text-fill: #38D260;
+}
+
+.text-link:hover{
+    -fx-text-fill: #13b940;
+}
+
+.text-link:pressed{
+    -fx-text-fill: #059b23;
+}
+
+
+.text-gray{
+    -fx-text-fill: #A89494;
+}
+
+
+.text-secondary{
+    -fx-font-size: 12px;
+}
+
+
+
+

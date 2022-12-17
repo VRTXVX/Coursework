@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="640.0" prefWidth="800.0" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.ecohome.controller.user.AddApplianceController">
+   <AnchorPane fx:id="mainPane" layoutX="192.0" layoutY="86.0" prefHeight="450.0" prefWidth="510.0" styleClass="pane-style" stylesheets="@../../style/EditAppliance.css" AnchorPane.leftAnchor="160.0" AnchorPane.rightAnchor="160.0" AnchorPane.topAnchor="70.0">
+      <VBox prefHeight="200.0" prefWidth="100.0" spacing="15.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+         <padding>
+            <Insets bottom="20.0" left="100.0" right="100.0" top="35.0" />
+         </padding>
+         <HBox prefHeight="35.0" prefWidth="260.0">
+            <Label prefHeight="45.0" prefWidth="178.0" styleClass="header-style" text="Add appliance" />
+         </HBox>
+         <TextField fx:id="fieldName" prefHeight="43.2" prefWidth="0.0" promptText="Name" styleClass="form-field">
+            <padding>
+               <Insets left="15.0" />
+            </padding>
+         </TextField>
+         <TextField fx:id="fieldMark" prefHeight="43.2" prefWidth="0.0" promptText="Mark" styleClass="form-field">
+            <padding>
+               <Insets left="15.0" />
+            </padding>
+         </TextField>
+         <TextField fx:id="fieldModel" prefHeight="43.2" prefWidth="0.0" promptText="Model" styleClass="form-field">
+            <padding>
+               <Insets left="15.0" />
+            </padding>
+         </TextField>
+         <TextField fx:id="fieldWattHour" prefHeight="43.2" prefWidth="0.0" promptText="Watt-hour" styleClass="form-field">
+            <padding>
+               <Insets left="15.0" />
+            </padding>
+         </TextField>
+         <TextField fx:id="fieldPowerConsumptionClass" prefHeight="43.2" prefWidth="0.0" promptText="Power Consumption Class" styleClass="form-field">
+            <padding>
+               <Insets left="15.0" />
+            </padding>
+         </TextField>
+         <HBox prefHeight="47.0" prefWidth="260.0" spacing="20.0">
+            <Button fx:id="btnApplyChanges" mnemonicParsing="false" onMouseClicked="#btnAddClicked" prefHeight="47.0" prefWidth="348.0" styleClass="btn-primary" text="Add" />
+         </HBox>
+      </VBox>
+   </AnchorPane>
+   <AnchorPane fx:id="descriptionPane" disable="true" layoutX="260.0" layoutY="311.0" prefHeight="111.0" prefWidth="280.0" styleClass="pane-style" stylesheets="@../../style/EditAppliance.css" visible="false">
+      <VBox prefHeight="200.0" prefWidth="100.0" spacing="30.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+         <padding>
+            <Insets left="70.0" right="70.0" top="10.0" />
+         </padding>
+         <Label styleClass="description-text" text="Successfully added" />
+         <Button fx:id="btnOk" mnemonicParsing="false" onMouseClicked="#btnOkClicked" prefHeight="30.0" prefWidth="66.0" styleClass="btn-agree" text="Ok">
+            <VBox.margin>
+               <Insets left="37.0" />
+            </VBox.margin>
+         </Button>
+      </VBox>
+   </AnchorPane>
+</AnchorPane>

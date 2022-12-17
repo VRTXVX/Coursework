@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.String?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.PasswordField?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="640.0" prefWidth="960.0" styleClass="body-bg-create" stylesheets="@../../style/Authorization.css" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.ecohome.controller.authorization.CreateAccountController">
+    <VBox layoutX="176.8" layoutY="136.0" prefHeight="368.8" prefWidth="280.0" spacing="9.6">
+        <padding>
+            <Insets bottom="40.0" left="40.0" right="40.0" top="40.0" />
+        </padding>
+        <TextField fx:id="fieldFirstName" prefHeight="43.2" prefWidth="200.0" promptText="First Name" styleClass="form-field" stylesheets="@../../style/Authorization.css">
+            <font>
+                <Font size="12.8" />
+            </font>
+            <opaqueInsets>
+                <Insets />
+            </opaqueInsets>
+            <VBox.margin>
+                <Insets />
+            </VBox.margin>
+         <padding>
+            <Insets left="16.0" right="16.0" />
+         </padding>
+        </TextField>
+      <TextField fx:id="fieldEmail" prefHeight="43.2" prefWidth="200.0" promptText="Email" styleClass="form-field" stylesheets="@../../style/Authorization.css">
+         <font>
+            <Font size="12.8" />
+         </font>
+         <opaqueInsets>
+            <Insets />
+         </opaqueInsets>
+         <padding>
+            <Insets left="16.0" right="16.0" />
+         </padding>
+      </TextField>
+      <TextField fx:id="fieldUsername" prefHeight="43.2" prefWidth="200.0" promptText="Username" styleClass="form-field" stylesheets="@../../style/Authorization.css">
+         <font>
+            <Font size="12.8" />
+         </font>
+         <opaqueInsets>
+            <Insets />
+         </opaqueInsets>
+         <padding>
+            <Insets left="16.0" right="16.0" />
+         </padding>
+      </TextField>
+        <PasswordField fx:id="fieldPassword" prefHeight="43.2" prefWidth="200.0" promptText="Password" styleClass="form-field" stylesheets="@../../style/Authorization.css">
+            <font>
+                <Font size="12.8" />
+            </font>
+            <VBox.margin>
+                <Insets />
+            </VBox.margin>
+         <padding>
+            <Insets left="16.0" right="16.0" />
+         </padding>
+        </PasswordField>
+        <Button fx:id="btnCreateAccount" mnemonicParsing="false" onAction="#btnCreateAccountClicked" prefHeight="43.2" prefWidth="200.0" styleClass="btn-primary" stylesheets="@../../style/Authorization.css" text="Create an account">
+            <font>
+                <Font size="12.8" />
+            </font>
+            <VBox.margin>
+                <Insets top="12.8" />
+            </VBox.margin>
+        </Button>
+        <HBox prefHeight="0.0" prefWidth="200.0" spacing="3.0">
+            <Label stylesheets="@../../style/Authorization.css" text="Already have an account?">
+                <font>
+                    <Font size="12.8" />
+                </font>
+                <HBox.margin>
+                    <Insets />
+                </HBox.margin>
+                <styleClass>
+                    <String fx:value="text-gray" />
+                    <String fx:value="text-secondary" />
+                </styleClass>
+            </Label>
+            <Label fx:id="labelLinkLogIn" accessibleRole="BUTTON" onMouseClicked="#labelLinkClicked" stylesheets="@../../style/Authorization.css" text="Log in" textFill="WHITE">
+                <font>
+                    <Font size="12.8" />
+                </font>
+                <styleClass>
+                    <String fx:value="text-link" />
+                    <String fx:value="text-secondary" />
+                </styleClass>
+            </Label>
+        </HBox>
+    </VBox>
+</AnchorPane>

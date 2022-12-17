@@ -1,0 +1,6 @@
+.body-bg{
+    -fx-background-image:url('../image/backgrounds/HomeBG.png');
+    -fx-background-size: 800px 640px;
+    -fx-background-position: 0px 0px;
+    -fx-background-repeat: no-repeat;
+}

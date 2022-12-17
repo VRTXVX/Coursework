@@ -1,0 +1,243 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.CheckBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ScrollPane?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.ColumnConstraints?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.shape.Line?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="640.0" prefWidth="800.0" style="-fx-background-color: #F0F0F0;" stylesheets="@../../style/ListOfAppliance.css" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.ecohome.controller.user.ListOfApplianceController">
+   <Pane fx:id="mainPane" layoutX="25.0" layoutY="49.0" prefHeight="476.0" prefWidth="740.0" styleClass="pane-style" stylesheets="@../../style/ListOfAppliance.css" AnchorPane.bottomAnchor="16.8" AnchorPane.leftAnchor="20.0" AnchorPane.rightAnchor="20.0" AnchorPane.topAnchor="87.0">
+      <VBox layoutX="2.0" layoutY="32.0" prefHeight="77.0" prefWidth="755.0" spacing="11.0">
+         <HBox prefHeight="65.0" prefWidth="755.0" stylesheets="@../../style/ListOfAppliance.css">
+            <ImageView fitHeight="30.0" fitWidth="24.0" pickOnBounds="true" preserveRatio="true">
+               <HBox.margin>
+                  <Insets left="19.8" right="19.8" top="10.6" />
+               </HBox.margin>
+               <Image url="@../../image/plug/plug.png" />
+            </ImageView>
+            <Line endX="7.748603820800781E-7" endY="47.0928955078125" style="-fx-stroke: #D2D2D2;" />
+            <VBox fx:id="vBoxName" accessibleRole="CHECK_BOX" onMouseClicked="#vBoxClicked" prefHeight="0.0" prefWidth="113.0">
+               <Label prefHeight="51.2" prefWidth="113.0" styleClass="table-header-style" text="Name">
+                  <padding>
+                     <Insets left="16.0" right="20.0" />
+                  </padding>
+               </Label>
+               <ImageView fx:id="imgCaretName" fitHeight="5.6" fitWidth="11.2" pickOnBounds="true" preserveRatio="true">
+                  <VBox.margin>
+                     <Insets bottom="5.0" left="5.0" />
+                  </VBox.margin>
+               </ImageView>
+            </VBox>
+            <Line endX="7.748603820800781E-7" endY="47.0928955078125" style="-fx-stroke: #D2D2D2;" />
+            <VBox fx:id="vBoxMark" accessibleRole="CHECK_BOX" onMouseClicked="#vBoxClicked" prefHeight="0.0" prefWidth="113.0">
+               <Label prefHeight="51.2" prefWidth="113.0" styleClass="table-header-style" text="Mark">
+                  <padding>
+                     <Insets left="16.0" right="20.0" />
+                  </padding>
+               </Label>
+               <ImageView fx:id="imgCaretMark" fitHeight="5.6" fitWidth="11.2" pickOnBounds="true" preserveRatio="true">
+                  <VBox.margin>
+                     <Insets bottom="5.0" left="5.0" />
+                  </VBox.margin>
+               </ImageView>
+            </VBox>
+            <Line endX="7.748603820800781E-7" endY="47.0928955078125" style="-fx-stroke: #D2D2D2;" />
+            <VBox fx:id="vBoxModel" accessibleRole="CHECK_BOX" onMouseClicked="#vBoxClicked" prefHeight="0.0" prefWidth="113.0">
+               <Label prefHeight="51.2" prefWidth="113.0" styleClass="table-header-style" text="Model">
+                  <padding>
+                     <Insets left="16.0" right="20.0" />
+                  </padding>
+               </Label>
+               <ImageView fx:id="imgCaretModel" fitHeight="5.6" fitWidth="11.2" pickOnBounds="true" preserveRatio="true">
+                  <VBox.margin>
+                     <Insets bottom="5.0" left="5.0" />
+                  </VBox.margin>
+               </ImageView>
+            </VBox>
+            <Line endX="7.748603820800781E-7" endY="47.0928955078125" style="-fx-stroke: #D2D2D2;" />
+            <VBox fx:id="vBoxWattHour" accessibleRole="CHECK_BOX" onMouseClicked="#vBoxClicked" prefHeight="0.0" prefWidth="113.0">
+               <Label prefHeight="51.2" prefWidth="113.0" styleClass="table-header-style" text="Watt/h">
+                  <padding>
+                     <Insets left="16.0" right="20.0" />
+                  </padding>
+               </Label>
+               <ImageView fx:id="imgCaretWattHour" fitHeight="5.6" fitWidth="11.2" pickOnBounds="true" preserveRatio="true">
+                  <VBox.margin>
+                     <Insets bottom="5.0" left="5.0" />
+                  </VBox.margin>
+               </ImageView>
+            </VBox>
+            <Line endX="7.748603820800781E-7" endY="47.0928955078125" style="-fx-stroke: #D2D2D2;" />
+            <VBox fx:id="vBoxConsumedEnergy" accessibleRole="CHECK_BOX" onMouseClicked="#vBoxClicked" prefHeight="0.0" prefWidth="113.0">
+               <Label prefHeight="51.2" prefWidth="113.0" styleClass="table-header-style" text="Consumed Energy kWt/h" wrapText="true">
+                  <padding>
+                     <Insets left="16.0" right="12.0" />
+                  </padding>
+               </Label>
+               <ImageView fx:id="imgCaretConsumedEnergy" fitHeight="5.6" fitWidth="11.2" pickOnBounds="true" preserveRatio="true">
+                  <VBox.margin>
+                     <Insets bottom="5.0" left="5.0" />
+                  </VBox.margin>
+               </ImageView>
+            </VBox>
+            <Line endX="7.748603820800781E-7" endY="51.0928955078125" style="-fx-stroke: #D2D2D2;">
+               <HBox.margin>
+                  <Insets />
+               </HBox.margin></Line>
+            <VBox fx:id="vBoxPowerClass" accessibleRole="CHECK_BOX" onMouseClicked="#vBoxClicked" prefHeight="0.0" prefWidth="113.0">
+               <Label ellipsisString="" prefHeight="60.0" prefWidth="113.0" styleClass="table-header-style" text="Power Consumption Class" wrapText="true">
+                  <VBox.margin>
+                     <Insets top="-5.0" />
+                  </VBox.margin>
+                  <padding>
+                     <Insets left="15.0" right="12.0" />
+                  </padding>
+               </Label>
+               <ImageView fx:id="imgCaretPowerClass" fitHeight="5.6" fitWidth="11.2" pickOnBounds="true" preserveRatio="true">
+                  <VBox.margin>
+                     <Insets left="5.0" />
+                  </VBox.margin>
+               </ImageView>
+            </VBox>
+         </HBox>
+         <Line endX="654.0" startX="-100.0" style="-fx-stroke: #D2D2D2;" />
+      </VBox>
+      <ScrollPane layoutY="108.0" prefHeight="402.2" prefWidth="749.0" style="-fx-background-insets: 1; -fx-border-insets: 1; -fx-background-color: white;">
+         <padding>
+            <Insets left="1.0" />
+         </padding>
+         <GridPane fx:id="gridPane" prefHeight="26.0" prefWidth="25.0">
+            <columnConstraints>
+               <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+            </columnConstraints>
+         </GridPane>
+      </ScrollPane>
+   </Pane>
+   <HBox layoutX="22.0" layoutY="-14.0" prefHeight="100.0" prefWidth="751.0" spacing="173.0" AnchorPane.bottomAnchor="554.0" AnchorPane.leftAnchor="20.0" AnchorPane.rightAnchor="20.0" AnchorPane.topAnchor="4.0">
+      <Label prefHeight="28.0" prefWidth="186.0" styleClass="header-style" text="List of Appliances">
+         <HBox.margin>
+            <Insets left="31.0" top="32.0" />
+         </HBox.margin>
+         <font>
+            <Font size="23.0" />
+         </font>
+      </Label>
+      <AnchorPane prefHeight="0.0" prefWidth="370.0" styleClass="pane-style">
+         <HBox.margin>
+            <Insets bottom="16.0" top="15.0" />
+         </HBox.margin>
+         <HBox layoutX="103.0" layoutY="-24.0" prefHeight="81.0" prefWidth="386.0" spacing="10.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="15.0" AnchorPane.rightAnchor="15.0" AnchorPane.topAnchor="0.0">
+            <TextField fx:id="fieldSearch" prefHeight="38.0" prefWidth="243.0" promptText="Search by everything" styleClass="search-field">
+               <padding>
+                  <Insets left="16.0" />
+               </padding>
+               <HBox.margin>
+                  <Insets bottom="6.5" top="6.5" />
+               </HBox.margin>
+            </TextField>
+            <ImageView fx:id="btnSearch" fitHeight="35.0" fitWidth="35.0" onMouseClicked="#btnSearchClicked" pickOnBounds="true" preserveRatio="true">
+               <HBox.margin>
+                  <Insets top="8.5" />
+               </HBox.margin>
+               <Image url="@../../image/search/search_disabled.png" />
+            </ImageView>
+            <ImageView fx:id="btnFilter" fitHeight="35.0" fitWidth="35.0" onMouseClicked="#btnFilterClicked" pickOnBounds="true" preserveRatio="true">
+               <HBox.margin>
+                  <Insets top="8.5" />
+               </HBox.margin>
+               <Image url="@../../image/filter/filter_disabled.png" />
+            </ImageView>
+         </HBox>
+      </AnchorPane>
+   </HBox>
+   <AnchorPane fx:id="filterMenu" disable="true" layoutX="410.0" layoutY="79.0" prefHeight="347.0" prefWidth="370.0" styleClass="pane-style" visible="false">
+      <VBox layoutX="68.0" layoutY="65.0" prefHeight="200.0" prefWidth="100.0" spacing="20.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+         <padding>
+            <Insets bottom="20.0" left="20.0" right="20.0" top="20.0" />
+         </padding>
+         <VBox prefHeight="54.0" prefWidth="330.0">
+            <Label styleClass="table-header-style" text="Watt-hour">
+               <VBox.margin>
+                  <Insets />
+               </VBox.margin>
+            </Label>
+            <HBox prefHeight="50.0" prefWidth="330.0" spacing="10.0">
+               <VBox.margin>
+                  <Insets />
+               </VBox.margin>
+               <padding>
+                  <Insets bottom="10.0" top="10.0" />
+               </padding>
+               <TextField fx:id="fieldMinWattHour" prefHeight="0.0" prefWidth="145.0" promptText="Min" styleClass="filter-field" />
+               <TextField fx:id="fieldMaxWattHour" prefHeight="0.0" prefWidth="149.0" promptText="Max" styleClass="filter-field" />
+               <CheckBox fx:id="checkBoxWattHourFilter" mnemonicParsing="false">
+                  <HBox.margin>
+                     <Insets top="4.0" />
+                  </HBox.margin>
+               </CheckBox>
+            </HBox>
+         </VBox>
+         <VBox prefHeight="54.0" prefWidth="330.0">
+            <Label styleClass="table-header-style" text="Consumed energy">
+               <VBox.margin>
+                  <Insets />
+               </VBox.margin>
+            </Label>
+            <HBox prefHeight="50.0" prefWidth="330.0" spacing="10.0">
+               <padding>
+                  <Insets bottom="10.0" top="10.0" />
+               </padding>
+               <VBox.margin>
+                  <Insets />
+               </VBox.margin>
+               <TextField fx:id="fieldMinConsumedEnergy" prefHeight="26.0" prefWidth="150.0" promptText="Min" styleClass="filter-field" />
+               <TextField fx:id="fieldMaxConsumedEnergy" prefHeight="26.0" prefWidth="150.0" promptText="Max" styleClass="filter-field" />
+               <CheckBox fx:id="checkBoxConsumedEnergyFilter" mnemonicParsing="false">
+                  <HBox.margin>
+                     <Insets top="4.0" />
+                  </HBox.margin>
+               </CheckBox>
+            </HBox>
+         </VBox>
+         <VBox prefHeight="54.0" prefWidth="330.0">
+            <Label styleClass="table-header-style" text="Power consumption class">
+               <VBox.margin>
+                  <Insets />
+               </VBox.margin>
+            </Label>
+            <HBox prefHeight="50.0" prefWidth="330.0" spacing="10.0">
+               <padding>
+                  <Insets bottom="10.0" top="10.0" />
+               </padding>
+               <VBox.margin>
+                  <Insets />
+               </VBox.margin>
+               <TextField fx:id="fieldMinPowerConsumption" prefHeight="26.0" prefWidth="150.0" promptText="Min" styleClass="filter-field" />
+               <TextField fx:id="fieldMaxPowerConsumption" prefHeight="26.0" prefWidth="150.0" promptText="Max" styleClass="filter-field" />
+               <CheckBox fx:id="checkBoxPowerConsumptionFilter" mnemonicParsing="false">
+                  <HBox.margin>
+                     <Insets top="4.0" />
+                  </HBox.margin>
+               </CheckBox>
+            </HBox>
+         </VBox>
+         <Button fx:id="btnApplyFilters" mnemonicParsing="false" onMouseClicked="#btnApplyFiltersClicked" prefHeight="43.0" prefWidth="262.0" styleClass="btn-primary" stylesheets="@../../style/Authorization.css" text="Apply">
+            <VBox.margin>
+               <Insets left="40.0" right="40.0" />
+            </VBox.margin>
+         </Button>
+      </VBox>
+   </AnchorPane>
+</AnchorPane>

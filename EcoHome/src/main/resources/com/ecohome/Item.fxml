@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.shape.Line?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="56.0" prefWidth="755.0" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.ecohome.controller.user.ItemController">
+   <HBox prefHeight="100.0" prefWidth="200.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+      <children>
+         <HBox prefHeight="97.0" prefWidth="0.0">
+            <children>
+               <ImageView fx:id="btnPlug" accessibleRole="BUTTON" fitHeight="30.0" fitWidth="24.0" onMouseClicked="#btnPlugClicked" pickOnBounds="true" preserveRatio="true" smooth="false">
+                  <HBox.margin>
+                     <Insets bottom="12.0" left="19.8" right="18.8" top="14.0" />
+                  </HBox.margin>
+               </ImageView>
+               <Line endX="7.748603820800781E-7" endY="47.0928955078125" style="-fx-stroke: #D2D2D2;">
+                  <HBox.margin>
+                     <Insets bottom="4.0" top="4.0" />
+                  </HBox.margin></Line>
+            </children>
+         </HBox>
+         <HBox fx:id="characteristicsBox" onMouseClicked="#characteristicsBoxClicked" prefHeight="56.0" prefWidth="755.0" stylesheets="@../../style/ListOfAppliance.css">
+            <Label fx:id="labelName" prefHeight="56.0" prefWidth="113.0" styleClass="table-row-style">
+               <HBox.margin>
+                  <Insets />
+               </HBox.margin>
+               <padding>
+                  <Insets left="16.0" right="20.0" />
+               </padding>
+            </Label>
+            <Line endX="7.748603820800781E-7" endY="47.0928955078125" style="-fx-stroke: #D2D2D2;">
+               <HBox.margin>
+                  <Insets bottom="4.0" top="4.0" />
+               </HBox.margin>
+            </Line>
+            <Label fx:id="labelMark" prefHeight="56.0" prefWidth="113.0" styleClass="table-row-style">
+               <padding>
+                  <Insets left="16.0" right="20.0" />
+               </padding>
+            </Label>
+            <Line endX="7.748603820800781E-7" endY="47.0928955078125" style="-fx-stroke: #D2D2D2;">
+               <HBox.margin>
+                  <Insets bottom="4.0" top="4.0" />
+               </HBox.margin>
+            </Line>
+            <Label fx:id="labelModel" prefHeight="56.0" prefWidth="113.0" styleClass="table-row-style">
+               <padding>
+                  <Insets left="16.0" right="20.0" />
+               </padding>
+            </Label>
+            <Line endX="7.748603820800781E-7" endY="47.0928955078125" style="-fx-stroke: #D2D2D2;">
+               <HBox.margin>
+                  <Insets bottom="4.0" top="4.0" />
+               </HBox.margin>
+            </Line>
+            <Label fx:id="labelWattHour" prefHeight="56.0" prefWidth="113.0" styleClass="table-row-style">
+               <padding>
+                  <Insets left="16.0" right="20.0" />
+               </padding>
+            </Label>
+            <Line endX="7.748603820800781E-7" endY="47.0928955078125" style="-fx-stroke: #D2D2D2;">
+               <HBox.margin>
+                  <Insets bottom="4.0" top="4.0" />
+               </HBox.margin>
+            </Line>
+            <Label fx:id="labelConsumedEnergy" prefHeight="56.0" prefWidth="113.0" styleClass="table-row-style" wrapText="true">
+               <HBox.margin>
+                  <Insets bottom="-20.0" />
+               </HBox.margin>
+               <padding>
+                  <Insets left="16.0" right="20.0" />
+               </padding>
+            </Label>
+            <Line endX="7.748603820800781E-7" endY="47.0928955078125" style="-fx-stroke: #D2D2D2;">
+               <HBox.margin>
+                  <Insets bottom="4.0" top="4.0" />
+               </HBox.margin>
+            </Line>
+            <Label fx:id="labelPowerConsumptionClass" ellipsisString="" prefHeight="56.0" prefWidth="113.0" styleClass="table-row-style" wrapText="true">
+               <HBox.margin>
+                  <Insets bottom="-20.0" />
+               </HBox.margin>
+               <padding>
+                  <Insets left="16.0" right="20.0" />
+               </padding>
+            </Label>
+         </HBox>
+      </children>
+   </HBox>
+   <Line endX="654.0" layoutX="100.5" layoutY="113.0999984741211" startX="-100.0" style="-fx-stroke: #D2D2D2;" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" />
+</AnchorPane>

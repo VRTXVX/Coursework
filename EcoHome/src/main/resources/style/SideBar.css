@@ -1,0 +1,19 @@
+.body-bg{
+    -fx-background-color: #38D260;
+}
+
+.text-btn{
+    -fx-text-fill: #FFFFFF;
+    -fx-font-family: "Open Sans Semibold";
+    -fx-font-weight: 600;
+    -fx-font-size: 16px;
+}
+
+.text-btn:hover{
+    -fx-text-fill: #FFFFFF;
+    -fx-font-size: 18px;
+}
+
+.text-btn:pressed{
+    -fx-font-size: 17px;
+}

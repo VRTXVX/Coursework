@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.String?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.VBox?>
+
+<AnchorPane maxHeight="640.0" maxWidth="960.0" minHeight="640.0" minWidth="960.0" prefHeight="640.0" prefWidth="960.0" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.ecohome.controller.user.MainSceneController">
+   <AnchorPane prefHeight="640.0" prefWidth="155.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="800.0" AnchorPane.topAnchor="0.0">
+      <VBox prefHeight="640.0" prefWidth="160.0" spacing="10.0" stylesheets="@../../style/SideBar.css" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+         <padding>
+            <Insets bottom="170.0" top="170.0" />
+         </padding>
+         <Label fx:id="btnAppliance" accessibleRole="BUTTON" onMouseClicked="#btnApplianceClicked" prefHeight="43.0" prefWidth="224.0" styleClass="text-btn" text="List of appliances">
+            <padding>
+               <Insets left="20.0" />
+            </padding>
+         </Label>
+         <Label fx:id="btnChangeList" accessibleRole="BUTTON" onMouseClicked="#btnChangeListClicked" prefHeight="43.0" prefWidth="224.0" styleClass="text-btn" text="Add appliance">
+            <padding>
+               <Insets left="20.0" />
+            </padding>
+         </Label>
+         <Label fx:id="btnStatistic" accessibleRole="BUTTON" onMouseClicked="#btnStatisticClicked" prefHeight="43.0" prefWidth="224.0" styleClass="text-btn" text="Statistics">
+            <padding>
+               <Insets left="20.0" />
+            </padding>
+         </Label>
+         <Label fx:id="btnSetting" accessibleRole="BUTTON" onMouseClicked="#btnSettingClicked" prefHeight="43.0" prefWidth="224.0" styleClass="text-btn" text="Settings">
+            <padding>
+               <Insets left="20.0" />
+            </padding>
+         </Label>
+         <Label fx:id="btnExit" accessibleRole="BUTTON" onMouseClicked="#btnExitClicked" prefHeight="43.0" prefWidth="224.0" styleClass="text-btn" text="Exit">
+            <padding>
+               <Insets left="20.0" />
+            </padding>
+         </Label>
+         <styleClass>
+            <String fx:value="text-btn" />
+            <String fx:value="body-bg" />
+         </styleClass>
+      </VBox>
+   </AnchorPane>
+   <AnchorPane fx:id="mainSceneSection" prefHeight="640.0" prefWidth="800.0" styleClass="body-bg" stylesheets="@../../style/MainScene.css" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="160.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0" />
+</AnchorPane>
