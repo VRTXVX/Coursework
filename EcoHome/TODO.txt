@@ -1,3 +1,0 @@
-TODO:
-// validate filtration
-// посунти лінію в виведені
